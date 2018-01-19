@@ -23,5 +23,18 @@ Execute: `docker-compose build`
 And when the process ends
 
 Execute **one**: 
+
 - `docker-compose up` to see apache access.log
 - `docker-compose up -d` for background exec
+
+### Symfony parameters
+
+This is **really important**. Database parameters inside *parameters.yml*
+
+```
+    database_host: mysql
+    database_port: 3306
+    database_name: symfony
+    database_user: root
+    database_password: root
+```
